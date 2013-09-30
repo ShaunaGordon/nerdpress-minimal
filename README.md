@@ -1,6 +1,6 @@
 # Nerdpress Minimal, an Octopress theme
 
-This is the first, and most minimal, in what I plan to be a series of similar themes. The idea will be to make this theme a clean, minimal one, with minimal graphics and effects. It could be a good base theme to run with, or used on its own.
+This is the second in a series of similar themes. This is still a minimalist theme, but is more in the spirit of minimalist themes in that the design is minimalist, but advanced (albeit subtle) effects are in play. So, in this theme, you'll find more effects than in Nerdpress-Base - things like CSS fades and web fonts. I still plan on keeping it relatively light, but for a very light or starter theme, check out [Nerdpress-Base](ShaunaGordon/Nerdpress-Base).
 
 ## Why "Nerdpress"?
 
