@@ -1,8 +1,34 @@
 {% capture root_url %}{{ site.root | strip_slash }}{% endcapture %}
 {% include head.html %}
 <body>
-	<header role="banner">{% include header.html %}</header>
-	<nav role="navigation">{% include navigation.html %}</nav>
+	<div id="sidebar">
+		<header role="banner">{% include header.html %}</header>
+		<nav role="navigation">{% include navigation.html %}</nav>
+
+		{% unless page.sidebar == false %}
+		{% unless page.url contains '/blog/' %}
+		<aside class="sidebar">
+		  {% if site.page_asides.size %}
+		    {% include_array page_asides %}
+		  {% else %}
+		    {% include_array default_asides %}
+		  {% endif %}
+		</aside>
+		{% endunless %}
+		{% endunless %}
+
+		{% if page.url contains '/blog/' %}
+		{% unless page.sidebar == false %}
+		<aside class="sidebar">
+		  {% if site.post_asides.size %}
+		    {% include_array post_asides %}
+		  {% else %}
+		    {% include_array default_asides %}
+		  {% endif %}
+		</aside>
+		{% endunless %}
+		{% endif %}
+	</div>
 	<div id="main">
 		<div id="content">
 			{{ content | expand_urls: root_url }}

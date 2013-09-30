@@ -1,0 +1,40 @@
+html {
+	background: $color-main;
+	font-family: $font-sans;
+	color: $color-complement;
+}
+
+#{headings(all)} {
+	font-family: $font-serif;
+	color: $color-complement;
+
+	a {
+		color: $color-complement;
+	}
+}
+
+header[role="banner"] {
+	line-height: 1;
+
+	h1 {
+		font-family: $font-display;
+		font-size: 5em;
+		letter-spacing: 3px;
+		margin: 0;
+	}
+
+	h2 {
+		font-family: $font-display;
+		font-size: 3.25em;
+		margin: $gutter*2 0;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: $color-highlight;
+
+	&:hover {
+		color: $color-accent;
+	}
+}

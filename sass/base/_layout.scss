@@ -1,0 +1,50 @@
+#sidebar {
+	padding: 0 $gutter*2;
+
+	fieldset[role="search"] {
+		width: 75%;
+		margin: 0 auto;
+
+		input {
+			width: 100%;
+		}
+	}
+
+	ul {
+		padding-left: 0;
+	}
+}
+
+#main {
+	padding: 0 $gutter*2;
+
+	p {
+		line-height: 1.75;
+	}
+}
+
+footer[role="contentinfo"] {
+	clear: both;
+	width: 40%;
+	margin: 0 auto;
+	padding-top: $gutter;
+}
+
+li {
+	list-style: none;
+	margin: $gutter*1.5 0;
+}
+
+@media all and (min-width: 61em) {
+	#sidebar {
+		width: 25%;
+		float: left;
+	}
+
+	#main {
+		width: 60%;
+		float: left;
+		border-left: 1px solid darken($color-main, 10%);
+		padding-left: $gutter*4;
+	}
+}
